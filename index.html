@@ -11,11 +11,12 @@
     <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="%23eadfcc"/><text x="32" y="38" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700" fill="%2312110f">JZC</text></svg>' />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="showcase-view">
     <div class="cursor-light" aria-hidden="true"></div>
     <header class="screen-nav">
-      <a href="#scene-hero" class="mark">人像作品集</a>
+      <a href="#scene-showcase" class="mark">人像作品集</a>
       <nav aria-label="横屏版导航">
+        <a href="#scene-showcase">总览</a>
         <a href="#scene-hero">光影</a>
         <a href="#scene-tone">明暗</a>
         <a href="#scene-series">作品组</a>
@@ -27,6 +28,166 @@
     </header>
 
     <main class="snap-container">
+      <section class="scene concept-scene" id="scene-showcase" aria-label="作品集设计板块">
+        <div class="concept-stage">
+          <aside class="phone-preview" aria-label="手机版预览骨架">
+            <div class="concept-topline">
+              <span>人像作品集</span>
+              <button class="ghost-icon" type="button" aria-label="打开菜单"><span></span><span></span></button>
+            </div>
+
+            <article class="phone-hero-card">
+              <div class="media-slot tone-window"></div>
+              <div class="phone-hero-copy">
+                <h2>人像作品集</h2>
+                <p>光影 · 叙事 · 情绪</p>
+                <a href="#scene-series" class="mini-pill">查看系列</a>
+              </div>
+            </article>
+
+            <div class="phone-tool-grid">
+              <a href="#scene-tone" class="phone-tool is-active">
+                <span>光影</span>
+              </a>
+              <a href="#scene-method" class="phone-tool">
+                <span>策划</span>
+              </a>
+              <a href="#scene-series" class="phone-tool">
+                <span>作品组</span>
+              </a>
+            </div>
+
+            <div class="phone-timeline" aria-label="作品系列时间线">
+              <article class="phone-timeline-item">
+                <span class="timeline-year">2024</span>
+                <div>
+                  <h3>春之信笺</h3>
+                  <p>樱花落在风里，光也落在你眼里。</p>
+                </div>
+                <div class="mini-media tone-sakura"></div>
+              </article>
+              <article class="phone-timeline-item">
+                <span class="timeline-year">2023</span>
+                <div>
+                  <h3>雪夜伞下</h3>
+                  <p>雪花与伞下的靠近。</p>
+                </div>
+                <div class="mini-media tone-snow"></div>
+              </article>
+              <article class="phone-timeline-item">
+                <span class="timeline-year">2022</span>
+                <div>
+                  <h3>秋日映画</h3>
+                  <p>落叶的温度，胶片的记忆。</p>
+                </div>
+                <div class="mini-media tone-autumn"></div>
+              </article>
+              <article class="phone-timeline-item">
+                <span class="timeline-year">2021</span>
+                <div>
+                  <h3>微光里的午后</h3>
+                  <p>窗边的光，书页的声。</p>
+                </div>
+                <div class="mini-media tone-room"></div>
+              </article>
+            </div>
+
+            <a href="#scene-series" class="phone-bottom-pill">查看系列</a>
+          </aside>
+
+          <section class="desktop-preview" aria-label="桌面版作品集板块骨架">
+            <div class="desktop-topbar">
+              <span>人像作品集</span>
+              <nav aria-label="作品集板块导航">
+                <a class="is-active" href="#scene-tone">光影</a>
+                <a href="#scene-method">策划</a>
+                <a href="#scene-series">作品组</a>
+              </nav>
+            </div>
+
+            <div class="desktop-hero-panel">
+              <div class="media-slot hero-wash"></div>
+              <div class="desktop-hero-copy">
+                <h1>人像作品集</h1>
+                <p>光影 · 叙事 · 情绪</p>
+                <a href="#scene-series" class="concept-button">查看系列</a>
+              </div>
+            </div>
+
+            <div class="concept-ability-grid">
+              <a href="#scene-tone" class="concept-ability-card">
+                <span class="ability-label">光影</span>
+                <p>光线的形状，情绪的语言</p>
+              </a>
+              <a href="#scene-method" class="concept-ability-card">
+                <span class="ability-label">策划</span>
+                <p>主题策划，视觉叙事构建</p>
+              </a>
+              <a href="#scene-series" class="concept-ability-card">
+                <span class="ability-label">作品组</span>
+                <p>系列作品，完整呈现</p>
+              </a>
+            </div>
+
+            <div class="series-board" aria-label="系列作品骨架">
+              <div class="series-rail" aria-hidden="true"></div>
+              <article class="series-row is-selected">
+                <div class="series-label">
+                  <span>2024</span>
+                  <h3>春之信笺</h3>
+                </div>
+                <div class="series-strip">
+                  <span class="thumb-slot tone-sakura"></span>
+                  <span class="thumb-slot tone-sakura-soft"></span>
+                  <span class="thumb-slot tone-spring"></span>
+                  <span class="thumb-slot tone-sakura-soft"></span>
+                </div>
+                <a href="#scene-series" class="row-pill">查看系列</a>
+              </article>
+              <article class="series-row">
+                <div class="series-label">
+                  <span>2023</span>
+                  <h3>雪夜伞下</h3>
+                </div>
+                <div class="series-strip">
+                  <span class="thumb-slot tone-snow"></span>
+                  <span class="thumb-slot tone-fog"></span>
+                  <span class="thumb-slot tone-night"></span>
+                  <span class="thumb-slot tone-fog"></span>
+                </div>
+                <a href="#scene-series" class="row-pill">查看系列</a>
+              </article>
+              <article class="series-row">
+                <div class="series-label">
+                  <span>2022</span>
+                  <h3>秋日映画</h3>
+                </div>
+                <div class="series-strip">
+                  <span class="thumb-slot tone-autumn"></span>
+                  <span class="thumb-slot tone-maple"></span>
+                  <span class="thumb-slot tone-autumn-deep"></span>
+                  <span class="thumb-slot tone-maple"></span>
+                </div>
+                <a href="#scene-series" class="row-pill">查看系列</a>
+              </article>
+              <article class="series-row">
+                <div class="series-label">
+                  <span>2021</span>
+                  <h3>微光里的午后</h3>
+                </div>
+                <div class="series-strip">
+                  <span class="thumb-slot tone-room"></span>
+                  <span class="thumb-slot tone-window"></span>
+                  <span class="thumb-slot tone-cream"></span>
+                  <span class="thumb-slot tone-window"></span>
+                </div>
+                <a href="#scene-series" class="row-pill">查看系列</a>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
       <section class="scene hero" id="scene-hero">
         <div class="stage-frame">
           <div class="hero-bg">

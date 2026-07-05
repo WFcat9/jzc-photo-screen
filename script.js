@@ -215,6 +215,19 @@ if (toneSlider && toneCards.length) {
   });
 }
 
+const conceptRows = [...document.querySelectorAll(".series-board .series-row")];
+
+conceptRows.forEach((row) => {
+  row.addEventListener("pointerenter", () => {
+    conceptRows.forEach((item) => item.classList.remove("is-selected"));
+    row.classList.add("is-selected");
+  });
+  row.addEventListener("focusin", () => {
+    conceptRows.forEach((item) => item.classList.remove("is-selected"));
+    row.classList.add("is-selected");
+  });
+});
+
 document.addEventListener("mousemove", (event) => {
   document.documentElement.style.setProperty("--x", `${event.clientX}px`);
   document.documentElement.style.setProperty("--y", `${event.clientY}px`);
@@ -234,5 +247,18 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal, .method-map").forEach((element) => {
   revealObserver.observe(element);
 });
+
+const showcaseScene = document.querySelector("#scene-showcase");
+
+if (showcaseScene) {
+  const showcaseObserver = new IntersectionObserver(
+    ([entry]) => {
+      document.body.classList.toggle("showcase-view", entry.isIntersecting && entry.intersectionRatio > 0.2);
+    },
+    { threshold: [0, 0.2, 0.62] },
+  );
+
+  showcaseObserver.observe(showcaseScene);
+}
 
 updateSlide();
