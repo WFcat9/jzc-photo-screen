@@ -1,0 +1,442 @@
+[
+  {
+    "id": "story_christmas_01",
+    "page": 13,
+    "file": "assets/photos/story_christmas_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_christmas_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 418,
+    "height": 622
+  },
+  {
+    "id": "story_christmas_02",
+    "page": 13,
+    "file": "assets/photos/story_christmas_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_christmas_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 417,
+    "height": 622
+  },
+  {
+    "id": "story_christmas_03",
+    "page": 13,
+    "file": "assets/photos/story_christmas_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_christmas_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 528,
+    "height": 351
+  },
+  {
+    "id": "story_christmas_04",
+    "page": 13,
+    "file": "assets/photos/story_christmas_04.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_christmas_04.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 512,
+    "height": 274
+  },
+  {
+    "id": "story_gothic_01",
+    "page": 15,
+    "file": "assets/photos/story_gothic_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_gothic_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 444,
+    "height": 621
+  },
+  {
+    "id": "story_gothic_02",
+    "page": 15,
+    "file": "assets/photos/story_gothic_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_gothic_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 482,
+    "height": 621
+  },
+  {
+    "id": "story_gothic_03",
+    "page": 15,
+    "file": "assets/photos/story_gothic_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_gothic_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 438,
+    "height": 621
+  },
+  {
+    "id": "story_snow_01",
+    "page": 16,
+    "file": "assets/photos/story_snow_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\story_snow_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 1172,
+    "height": 615
+  },
+  {
+    "id": "season_rape_01",
+    "page": 18,
+    "file": "assets/photos/season_rape_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_rape_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 675,
+    "height": 1015
+  },
+  {
+    "id": "season_cherry_01",
+    "page": 19,
+    "file": "assets/photos/season_cherry_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_cherry_01.jpg",
+    "group": "????",
+    "caption": "?????",
+    "width": 404,
+    "height": 606
+  },
+  {
+    "id": "season_cherry_02",
+    "page": 19,
+    "file": "assets/photos/season_cherry_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_cherry_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 390,
+    "height": 606
+  },
+  {
+    "id": "season_cherry_03",
+    "page": 19,
+    "file": "assets/photos/season_cherry_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_cherry_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 585,
+    "height": 390
+  },
+  {
+    "id": "season_autumn_01",
+    "page": 20,
+    "file": "assets/photos/season_autumn_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_autumn_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 480,
+    "height": 241
+  },
+  {
+    "id": "season_autumn_02",
+    "page": 20,
+    "file": "assets/photos/season_autumn_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_autumn_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 480,
+    "height": 234
+  },
+  {
+    "id": "season_autumn_03",
+    "page": 20,
+    "file": "assets/photos/season_autumn_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_autumn_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 480,
+    "height": 238
+  },
+  {
+    "id": "season_autumn_04",
+    "page": 20,
+    "file": "assets/photos/season_autumn_04.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\season_autumn_04.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 405,
+    "height": 678
+  },
+  {
+    "id": "daily_lake_01",
+    "page": 22,
+    "file": "assets/photos/daily_lake_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\daily_lake_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 530,
+    "height": 785
+  },
+  {
+    "id": "daily_lake_02",
+    "page": 22,
+    "file": "assets/photos/daily_lake_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\daily_lake_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 544,
+    "height": 355
+  },
+  {
+    "id": "daily_lake_03",
+    "page": 22,
+    "file": "assets/photos/daily_lake_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\daily_lake_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 838,
+    "height": 392
+  },
+  {
+    "id": "campus_01",
+    "page": 28,
+    "file": "assets/photos/campus_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\campus_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 646,
+    "height": 428
+  },
+  {
+    "id": "campus_02",
+    "page": 28,
+    "file": "assets/photos/campus_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\campus_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 445,
+    "height": 665
+  },
+  {
+    "id": "campus_03",
+    "page": 28,
+    "file": "assets/photos/campus_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\campus_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 415,
+    "height": 652
+  },
+  {
+    "id": "night_fire_01",
+    "page": 27,
+    "file": "assets/photos/night_fire_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\night_fire_01.jpg",
+    "group": "????",
+    "caption": "?????",
+    "width": 794,
+    "height": 384
+  },
+  {
+    "id": "night_fire_02",
+    "page": 27,
+    "file": "assets/photos/night_fire_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\night_fire_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 794,
+    "height": 324
+  },
+  {
+    "id": "night_fire_03",
+    "page": 27,
+    "file": "assets/photos/night_fire_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\night_fire_03.jpg",
+    "group": "????",
+    "caption": "?????",
+    "width": 794,
+    "height": 356
+  },
+  {
+    "id": "night_fire_04",
+    "page": 27,
+    "file": "assets/photos/night_fire_04.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\night_fire_04.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 522,
+    "height": 490
+  },
+  {
+    "id": "night_fire_05",
+    "page": 27,
+    "file": "assets/photos/night_fire_05.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\night_fire_05.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 522,
+    "height": 524
+  },
+  {
+    "id": "light_oldroom_01",
+    "page": 8,
+    "file": "assets/photos/light_oldroom_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\light_oldroom_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 1134,
+    "height": 543
+  },
+  {
+    "id": "light_film_01",
+    "page": 29,
+    "file": "assets/photos/light_film_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\light_film_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 392,
+    "height": 587
+  },
+  {
+    "id": "light_film_02",
+    "page": 29,
+    "file": "assets/photos/light_film_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\light_film_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 389,
+    "height": 590
+  },
+  {
+    "id": "light_film_03",
+    "page": 29,
+    "file": "assets/photos/light_film_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\light_film_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 475,
+    "height": 324
+  },
+  {
+    "id": "light_film_04",
+    "page": 29,
+    "file": "assets/photos/light_film_04.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\light_film_04.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 389,
+    "height": 588
+  },
+  {
+    "id": "lowkey_01",
+    "page": 30,
+    "file": "assets/photos/lowkey_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\lowkey_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 404,
+    "height": 535
+  },
+  {
+    "id": "lowkey_02",
+    "page": 30,
+    "file": "assets/photos/lowkey_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\lowkey_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 355,
+    "height": 533
+  },
+  {
+    "id": "lowkey_03",
+    "page": 30,
+    "file": "assets/photos/lowkey_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\lowkey_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 358,
+    "height": 535
+  },
+  {
+    "id": "lowkey_04",
+    "page": 30,
+    "file": "assets/photos/lowkey_04.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\lowkey_04.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 360,
+    "height": 535
+  },
+  {
+    "id": "lowkey_05",
+    "page": 30,
+    "file": "assets/photos/lowkey_05.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\lowkey_05.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 404,
+    "height": 535
+  },
+  {
+    "id": "style_hanfu_01",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_01.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_01.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 353,
+    "height": 552
+  },
+  {
+    "id": "style_hanfu_02",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_02.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_02.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 430,
+    "height": 580
+  },
+  {
+    "id": "style_hanfu_03",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_03.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_03.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 447,
+    "height": 543
+  },
+  {
+    "id": "style_hanfu_04",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_04.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_04.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 333,
+    "height": 558
+  },
+  {
+    "id": "style_hanfu_05",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_05.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_05.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 340,
+    "height": 507
+  },
+  {
+    "id": "style_hanfu_06",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_06.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_06.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 391,
+    "height": 540
+  },
+  {
+    "id": "style_hanfu_07",
+    "page": 31,
+    "file": "assets/photos/style_hanfu_07.jpg",
+    "sourceFile": "D:\\CODEX5\\photography-portfolio-work\\curated\\photos\\style_hanfu_07.jpg",
+    "group": "????",
+    "caption": "????",
+    "width": 910,
+    "height": 469
+  }
+]

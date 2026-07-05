@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="贾志超人像摄影作品集横屏放映版，适合面试现场展示主题策划、光影控制和系列拍摄能力。"
+    />
+    <title>贾志超｜摄影作品集横屏放映版</title>
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="32" fill="%23eadfcc"/><text x="32" y="38" text-anchor="middle" font-size="18" font-family="Arial" font-weight="700" fill="%2312110f">JZC</text></svg>' />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-light" aria-hidden="true"></div>
+    <header class="screen-nav">
+      <a href="#scene-hero" class="mark">JZC PHOTO</a>
+      <nav aria-label="横屏版导航">
+        <a href="#scene-series">作品组</a>
+        <a href="#scene-method">拍摄方法</a>
+        <a href="#scene-deck">放映稿</a>
+        <a href="https://wfcat9.github.io/jzc-photo-mobile/" target="_blank" rel="noreferrer">手机版</a>
+      </nav>
+      <button class="fullscreen-button" type="button">全屏</button>
+    </header>
+
+    <main class="snap-container">
+      <section class="scene hero" id="scene-hero">
+        <div class="stage-frame">
+          <div class="hero-bg">
+            <img src="assets/photos/light_film_04.jpg" alt="逆光电影感人像" />
+          </div>
+          <div class="hero-content reveal">
+            <p class="kicker">人像摄影作品集 / 横屏放映版</p>
+            <h1>光影、场景与人物状态。</h1>
+            <p>
+              作品覆盖主题策划、自然人像、夜景氛围和低调棚拍。适合在面试时用较短时间讲清楚拍摄判断。
+            </p>
+            <div class="hero-actions">
+              <a class="glow-button" href="#scene-series">进入作品组</a>
+              <a class="outline-button" href="#scene-deck">查看原展示稿</a>
+            </div>
+          </div>
+          <div class="hero-strip reveal">
+            <img src="assets/photos/night_fire_04.jpg" alt="夜景烟花人像" />
+            <img src="assets/photos/season_cherry_02.jpg" alt="春樱人像" />
+            <img src="assets/photos/lowkey_04.jpg" alt="低调棚拍人像" />
+          </div>
+        </div>
+      </section>
+
+      <section class="scene series-scene" id="scene-series">
+        <div class="stage-frame">
+          <div class="scene-heading reveal">
+            <p class="kicker">作品组</p>
+            <h2>用六组照片，讲清楚能力边界。</h2>
+          </div>
+          <div class="chapter-grid" id="chapterGrid"></div>
+        </div>
+      </section>
+
+      <section class="scene method-scene" id="scene-method">
+        <div class="stage-frame">
+          <div class="scene-heading reveal">
+            <p class="kicker">拍摄方法</p>
+            <h2>从观察到交付，保留清晰判断。</h2>
+          </div>
+          <div class="method-map" id="methodMap">
+            <span class="method-line" aria-hidden="true"></span>
+            <article class="method-point reveal">
+              <span>01</span>
+              <h3>定光线</h3>
+              <p>先看主光方向、暗部和背景层次。</p>
+              <img src="assets/photos/light_oldroom_01.jpg" alt="旧室微光人像" />
+            </article>
+            <article class="method-point reveal">
+              <span>02</span>
+              <h3>定情绪</h3>
+              <p>用场景和道具，让人物有进入画面的理由。</p>
+              <img src="assets/photos/story_christmas_03.jpg" alt="圣诞布景人像" />
+            </article>
+            <article class="method-point reveal">
+              <span>03</span>
+              <h3>定动作</h3>
+              <p>通过走动、回头、看向物件，弱化僵硬感。</p>
+              <img src="assets/photos/daily_lake_03.jpg" alt="水花瞬间人像" />
+            </article>
+            <article class="method-point reveal">
+              <span>04</span>
+              <h3>定系列</h3>
+              <p>交付时控制色调、景别和节奏，形成完整组照。</p>
+              <img src="assets/photos/style_hanfu_07.jpg" alt="古风场景全景" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene deck-scene" id="scene-deck">
+        <div class="stage-frame deck-frame">
+          <div class="deck-copy reveal">
+            <p class="kicker">原摄影集精选页</p>
+            <h2>保留 PDF 的章节感，方便现场放映。</h2>
+            <p>下方按钮可切换页面，也可以使用键盘左右方向键。</p>
+          </div>
+          <div class="slide-viewer glass">
+            <img id="slideImage" src="assets/slides/slide-30.jpg" alt="摄影集精选页面" />
+            <div class="slide-controls">
+              <button type="button" id="prevSlide">上一页</button>
+              <span id="slideMeta">1 / 15</span>
+              <button type="button" id="nextSlide">下一页</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene closing-scene" id="scene-close">
+        <div class="stage-frame">
+          <div class="closing-layout reveal">
+            <img src="assets/photos/night_fire_05.jpg" alt="夜景微光人像" />
+            <div>
+              <p class="kicker">面试展示建议</p>
+              <h2>先讲三组，不要讲满。</h2>
+              <p>
+                推荐顺序：夜景氛围、低调棚拍、主题策划。每组只讲拍摄目的、用光判断和最终交付。
+              </p>
+              <a class="glow-button" href="https://wfcat9.github.io/jzc-photo-mobile/" target="_blank" rel="noreferrer">
+                打开手机版作品集
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="gallery-modal" id="galleryModal" aria-hidden="true" role="dialog" aria-label="作品组图库">
+      <button class="modal-close" type="button" aria-label="关闭图库">×</button>
+      <div class="gallery-shell glass">
+        <div class="gallery-info">
+          <p id="modalKicker"></p>
+          <h2 id="modalTitle"></h2>
+          <span id="modalCount"></span>
+        </div>
+        <div class="gallery-track" id="modalImages"></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
