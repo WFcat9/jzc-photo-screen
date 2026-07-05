@@ -1,23 +1,23 @@
 const series = [
   {
-    title: "夜景氛围",
-    kicker: "烟花 / 城市 / 微光",
+    title: "夜色微光",
+    kicker: "烟火 / 城市 / 微光",
     cover: "assets/photos/night_fire_04.jpg",
-    note: "夜景环境里建立人物和光源的关系。",
+    note: "烟火和城市光源留在背景里，人物面部保持安静，形成夜色中的呼吸感。",
     images: ["night_fire_04", "night_fire_05", "night_fire_01", "night_fire_02", "night_fire_03"],
   },
   {
-    title: "低调棚拍",
-    kicker: "Low-key / 光比 / 肖像",
+    title: "暗室低调",
+    kicker: "侧光 / 暗部 / 肖像",
     cover: "assets/photos/lowkey_04.jpg",
-    note: "用暗部、投影和侧光控制人物轮廓。",
+    note: "用侧光压住背景，让轮廓、眼神和手部动作成为主要信息。",
     images: ["lowkey_04", "lowkey_05", "lowkey_01", "lowkey_02", "lowkey_03"],
   },
   {
-    title: "主题策划",
+    title: "节日布景",
     kicker: "场景 / 道具 / 情绪",
     cover: "assets/photos/story_snow_01.jpg",
-    note: "让道具和场景承担叙事功能。",
+    note: "雪夜、圣诞与哥特主题都先建立场景，再让人物动作进入画面。",
     images: [
       "story_snow_01",
       "story_christmas_01",
@@ -30,10 +30,10 @@ const series = [
     ],
   },
   {
-    title: "季节人像",
+    title: "季节流动",
     kicker: "春樱 / 秋枫 / 花海",
     cover: "assets/photos/season_cherry_02.jpg",
-    note: "用前景、色相和动势组织自然环境。",
+    note: "用花枝、落叶和前景虚化包围人物，让季节成为画面的第一层情绪。",
     images: [
       "season_cherry_02",
       "season_cherry_01",
@@ -46,17 +46,17 @@ const series = [
     ],
   },
   {
-    title: "校园叙事",
+    title: "校园静叙",
     kicker: "窗光 / 阅读 / 日常",
     cover: "assets/photos/campus_02.jpg",
-    note: "用安静姿态和空间留白形成生活片段。",
+    note: "保留阅读、窗边和水面这些日常细节，让照片有更轻的生活感。",
     images: ["campus_02", "campus_01", "campus_03", "daily_lake_01", "daily_lake_02", "daily_lake_03"],
   },
   {
-    title: "风格造型",
+    title: "国风造型",
     kicker: "国风 / 妆造 / 场景",
     cover: "assets/photos/style_hanfu_07.jpg",
-    note: "在造型和复杂场景里保持视觉统一。",
+    note: "在服饰、妆造和复杂场景中统一色调，让人物仍然是视觉中心。",
     images: [
       "style_hanfu_07",
       "style_hanfu_01",
@@ -126,7 +126,13 @@ function openGallery(item) {
   modalKicker.textContent = item.kicker;
   modalCount.textContent = `${item.images.length} 张作品`;
   modalImages.innerHTML = item.images
-    .map((id) => `<img src="assets/photos/${id}.jpg" alt="${item.title}作品" loading="lazy">`)
+    .map(
+      (id) => `
+        <figure class="gallery-photo">
+          <img src="assets/photos/${id}.jpg" alt="${item.title}作品" loading="lazy">
+        </figure>
+      `,
+    )
     .join("");
   modal.classList.add("is-open");
   modal.setAttribute("aria-hidden", "false");
@@ -179,6 +185,35 @@ fullscreenButton.addEventListener("click", async () => {
     fullscreenButton.textContent = "全屏";
   }
 });
+
+const toneSlider = document.querySelector("#toneSlider");
+const toneCards = [...document.querySelectorAll(".tone-card")];
+
+function updateToneStrip(value) {
+  toneCards.forEach((card, index) => {
+    const distance = Math.abs(index - value);
+    const brightness = Math.max(0.28, 1.1 - distance * 0.28);
+    const contrast = Math.min(1.18, 0.98 + Math.max(0, 1 - distance) * 0.14);
+    card.style.setProperty("--tone-brightness", brightness.toFixed(2));
+    card.style.setProperty("--tone-contrast", contrast.toFixed(2));
+    card.classList.toggle("is-active", distance < 0.56);
+  });
+}
+
+if (toneSlider && toneCards.length) {
+  updateToneStrip(Number(toneSlider.value));
+  toneSlider.addEventListener("input", (event) => updateToneStrip(Number(event.target.value)));
+  toneCards.forEach((card, index) => {
+    card.addEventListener("pointerenter", () => {
+      toneSlider.value = index;
+      updateToneStrip(index);
+    });
+    card.addEventListener("focusin", () => {
+      toneSlider.value = index;
+      updateToneStrip(index);
+    });
+  });
+}
 
 document.addEventListener("mousemove", (event) => {
   document.documentElement.style.setProperty("--x", `${event.clientX}px`);
