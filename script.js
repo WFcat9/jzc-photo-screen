@@ -70,21 +70,21 @@ const series = [
 ];
 
 const slides = [
-  "slide-05",
-  "slide-08",
-  "slide-13",
-  "slide-15",
-  "slide-16",
-  "slide-18",
-  "slide-19",
-  "slide-20",
-  "slide-22",
-  "slide-27",
-  "slide-28",
-  "slide-29",
-  "slide-30",
-  "slide-31",
-  "slide-32",
+  { id: "slide-05", name: "作品封面", desc: "摄影集开篇页" },
+  { id: "slide-08", name: "旧室微光", desc: "室内光线原稿" },
+  { id: "slide-13", name: "节日布景", desc: "主题场景原稿" },
+  { id: "slide-15", name: "暗夜造型", desc: "人物造型原稿" },
+  { id: "slide-16", name: "雪夜伞下", desc: "雪夜主题原稿" },
+  { id: "slide-18", name: "花海侧影", desc: "外景花海原稿" },
+  { id: "slide-19", name: "春日花影", desc: "春樱人像原稿" },
+  { id: "slide-20", name: "秋日映画", desc: "秋季外景原稿" },
+  { id: "slide-22", name: "湖边日常", desc: "日常叙事原稿" },
+  { id: "slide-27", name: "烟火夜景", desc: "夜景微光原稿" },
+  { id: "slide-28", name: "校园静叙", desc: "校园场景原稿" },
+  { id: "slide-29", name: "胶片光感", desc: "电影感光线原稿" },
+  { id: "slide-30", name: "暗调肖像", desc: "棚拍肖像原稿" },
+  { id: "slide-31", name: "国风造型", desc: "国风场景原稿" },
+  { id: "slide-32", name: "收束页面", desc: "摄影集结尾页" },
 ];
 
 const chapterGrid = document.querySelector("#chapterGrid");
@@ -96,6 +96,8 @@ const modalImages = document.querySelector("#modalImages");
 const closeButton = document.querySelector(".modal-close");
 const slideImage = document.querySelector("#slideImage");
 const slideMeta = document.querySelector("#slideMeta");
+const slideName = document.querySelector("#slideName");
+const slideDesc = document.querySelector("#slideDesc");
 const prevSlide = document.querySelector("#prevSlide");
 const nextSlide = document.querySelector("#nextSlide");
 const fullscreenButton = document.querySelector(".fullscreen-button");
@@ -147,7 +149,9 @@ function closeGallery() {
 
 function updateSlide() {
   const slide = slides[slideIndex];
-  slideImage.src = `assets/slides/${slide}.jpg`;
+  slideImage.src = `assets/slides/${slide.id}.jpg`;
+  slideName.textContent = slide.name;
+  slideDesc.textContent = slide.desc;
   slideMeta.textContent = `${slideIndex + 1} / ${slides.length}`;
 }
 
@@ -247,6 +251,39 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal, .method-map").forEach((element) => {
   revealObserver.observe(element);
 });
+
+const sceneObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      entry.target.classList.toggle("is-active", entry.isIntersecting && entry.intersectionRatio > 0.45);
+    });
+  },
+  { threshold: [0, 0.45, 0.7] },
+);
+
+document.querySelectorAll(".scene").forEach((scene) => {
+  sceneObserver.observe(scene);
+});
+
+function syncVisibleState() {
+  const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+  document.querySelectorAll(".scene").forEach((scene) => {
+    const rect = scene.getBoundingClientRect();
+    const visibleHeight = Math.min(rect.bottom, viewportHeight) - Math.max(rect.top, 0);
+    scene.classList.toggle("is-active", visibleHeight > viewportHeight * 0.35);
+  });
+
+  document.querySelectorAll(".reveal, .method-map").forEach((element) => {
+    const rect = element.getBoundingClientRect();
+    if (rect.top < viewportHeight * 0.88 && rect.bottom > viewportHeight * 0.08) {
+      element.classList.add("is-visible");
+    }
+  });
+}
+
+window.addEventListener("load", () => requestAnimationFrame(syncVisibleState));
+window.addEventListener("hashchange", () => window.setTimeout(syncVisibleState, 120));
+window.setTimeout(syncVisibleState, 80);
 
 const showcaseScene = document.querySelector("#scene-showcase");
 
