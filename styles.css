@@ -372,6 +372,7 @@ body.is-loaded .phone-hero-card .media-slot img,
 }
 
 .media-slot,
+.thumb-frame,
 .thumb-slot,
 .mini-media {
   position: relative;
@@ -391,6 +392,59 @@ body.is-loaded .phone-hero-card .media-slot img,
   filter: blur(10px);
   transform: translateX(-68%);
   animation: placeholder-sheen 5.8s ease-in-out infinite;
+}
+
+.thumb-frame {
+  display: block;
+  width: 100%;
+  height: 44px;
+  border: 1px solid rgb(238 230 216 / 0.18);
+  border-radius: 5px;
+  box-shadow:
+    inset 0 0 28px rgb(216 173 114 / 0.1),
+    0 8px 18px rgb(0 0 0 / 0.14);
+  filter: saturate(0.7) brightness(0.88);
+  transition: filter 200ms ease, transform 200ms ease, border-color 200ms ease;
+}
+
+.thumb-frame::before,
+.thumb-frame::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.thumb-frame::before {
+  background-image: var(--thumb-bg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.68;
+  filter: blur(9px) saturate(0.76) brightness(0.58);
+  transform: scale(1.18);
+}
+
+.thumb-frame::after {
+  z-index: 2;
+  background:
+    linear-gradient(90deg, rgb(18 15 12 / 0.42), transparent 28%, transparent 72%, rgb(18 15 12 / 0.5)),
+    linear-gradient(180deg, rgb(255 242 220 / 0.08), rgb(0 0 0 / 0.16));
+  box-shadow: inset 0 0 0 1px rgb(255 240 218 / 0.04);
+  pointer-events: none;
+}
+
+.thumb-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: auto;
+  height: auto;
+  max-width: calc(100% - 10px);
+  max-height: calc(100% - 7px);
+  object-fit: contain;
+  filter: saturate(0.9) brightness(0.96) contrast(1.02);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 4px 14px rgb(0 0 0 / 0.28);
 }
 
 .phone-hero-card .media-slot {
@@ -781,6 +835,8 @@ body.is-loaded .phone-hero-card .media-slot img,
   left: 11px;
 }
 
+.series-row.is-selected .thumb-frame,
+.series-row:hover .thumb-frame,
 .series-row.is-selected .thumb-slot,
 .series-row:hover .thumb-slot {
   filter: saturate(0.72) brightness(0.94);
@@ -808,7 +864,22 @@ body.is-loaded .phone-hero-card .media-slot img,
   transition: filter 200ms ease, transform 200ms ease;
 }
 
+.series-row.is-selected .thumb-frame,
+.series-row:hover .thumb-frame {
+  border-color: rgb(216 173 114 / 0.34);
+}
+
+.series-row.is-selected .thumb-frame::before,
+.series-row:hover .thumb-frame::before {
+  opacity: 0.82;
+  filter: blur(8px) saturate(0.9) brightness(0.68);
+}
+
 .series-row:hover .thumb-slot {
+  transform: translateY(-1px);
+}
+
+.series-row:hover .thumb-frame {
   transform: translateY(-1px);
 }
 

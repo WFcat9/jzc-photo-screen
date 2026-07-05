@@ -103,7 +103,22 @@ const nextSlide = document.querySelector("#nextSlide");
 const fullscreenButton = document.querySelector(".fullscreen-button");
 let slideIndex = 12;
 
+function hydrateTimelineThumbs() {
+  document.querySelectorAll("img.thumb-slot").forEach((image) => {
+    if (image.closest(".thumb-frame")) return;
+
+    const frame = document.createElement("span");
+    frame.className = "thumb-frame";
+    frame.style.setProperty("--thumb-bg", `url("${image.getAttribute("src")}")`);
+    image.classList.remove("thumb-slot");
+    image.classList.add("thumb-image");
+    image.parentNode.insertBefore(frame, image);
+    frame.appendChild(image);
+  });
+}
+
 window.addEventListener("DOMContentLoaded", () => {
+  hydrateTimelineThumbs();
   window.setTimeout(() => document.body.classList.add("is-loaded"), 60);
 });
 
