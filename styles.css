@@ -313,7 +313,7 @@ body.is-loaded .desktop-hero-panel .media-slot img {
 
 .desktop-preview {
   display: grid;
-  grid-template-rows: 56px 236px 104px 1fr;
+  grid-template-rows: 56px 236px 126px 1fr;
   border-radius: 32px;
 }
 
@@ -712,11 +712,11 @@ body.is-loaded .desktop-hero-panel .media-slot img {
 .desktop-hero-panel .media-slot {
   position: absolute;
   inset: 0;
-  filter: saturate(0.78) brightness(0.76);
+  filter: saturate(0.84) brightness(0.92);
 }
 
 .desktop-hero-panel .media-slot img {
-  object-fit: fill;
+  object-fit: cover;
   object-position: 50% 50%;
   transform: scale(1);
 }
@@ -762,17 +762,17 @@ body.is-loaded .desktop-hero-panel .media-slot img {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 12px;
-  padding: 14px 44px 10px;
+  padding: 14px 44px 12px;
 }
 
 .concept-ability-card {
   position: relative;
   display: grid;
-  min-height: 88px;
+  min-height: 96px;
   align-content: center;
   min-width: 0;
   overflow: hidden;
-  padding: 18px 28px 18px 72px;
+  padding: 18px 32px 18px 72px;
   border-radius: 14px;
   transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
 }
@@ -818,8 +818,8 @@ body.is-loaded .desktop-hero-panel .media-slot img {
 .concept-ability-card p {
   margin: 0;
   color: var(--muted);
-  font-size: 12px;
-  line-height: 1.55;
+  font-size: 12.4px;
+  line-height: 1.42;
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
