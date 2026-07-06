@@ -11,6 +11,9 @@
   --headline-soft: #c6aa82;
   --surface-warm: #211a14;
   --surface-warm-2: #2a2118;
+  --stripe-deep: rgb(48 43 37 / 0.18);
+  --stripe-warm: rgb(216 173 114 / 0.075);
+  --stripe-cool: rgb(230 224 214 / 0.035);
   --radius: 28px;
 }
 
@@ -26,6 +29,7 @@ body {
   margin: 0;
   color: var(--text);
   background:
+    linear-gradient(135deg, transparent 0 16%, rgb(65 55 43 / 0.08) 16% 17%, transparent 17% 42%, rgb(34 31 28 / 0.16) 42% 44%, transparent 44% 100%),
     radial-gradient(circle at 78% 16%, rgb(216 173 114 / 0.18), transparent 30rem),
     radial-gradient(circle at 10% 75%, rgb(204 191 170 / 0.1), transparent 26rem),
     #11110e;
@@ -213,16 +217,64 @@ body.showcase-view .screen-nav {
   content: "";
   position: absolute;
   inset: 0;
+  z-index: 0;
   pointer-events: none;
   background-image:
+    radial-gradient(circle at 78% 22%, rgb(216 173 114 / 0.09), transparent 34rem),
+    linear-gradient(135deg, transparent 0 26%, rgb(255 245 224 / 0.022) 26% 26.8%, transparent 26.8% 48%, rgb(80 68 52 / 0.055) 48% 50%, transparent 50% 100%),
     linear-gradient(rgb(255 255 255 / 0.023) 1px, transparent 1px),
     linear-gradient(90deg, rgb(255 255 255 / 0.018) 1px, transparent 1px);
   background-size: 56px 56px;
   mask-image: linear-gradient(to bottom, transparent, black 18%, black 76%, transparent);
 }
 
+.scene::after {
+  content: "";
+  position: absolute;
+  inset: -8%;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(135deg, transparent 0 10%, var(--stripe-deep) 10% 11.2%, transparent 11.2% 27%, rgb(26 24 22 / 0.28) 27% 29.4%, transparent 29.4% 100%),
+    linear-gradient(135deg, transparent 0 38%, var(--stripe-warm) 38% 39%, transparent 39% 57%, rgb(83 70 53 / 0.09) 57% 58.5%, transparent 58.5% 100%),
+    linear-gradient(135deg, transparent 0 73%, var(--stripe-cool) 73% 73.6%, transparent 73.6% 100%);
+  background-size:
+    560px 360px,
+    740px 460px,
+    420px 280px;
+  background-position:
+    right top,
+    18% 22%,
+    62% 68%;
+  clip-path: polygon(
+    66% 0,
+    100% 0,
+    100% 28%,
+    84% 28%,
+    84% 39%,
+    100% 39%,
+    100% 74%,
+    72% 74%,
+    72% 90%,
+    46% 90%,
+    46% 100%,
+    0 100%,
+    0 84%,
+    25% 84%,
+    25% 66%,
+    3% 66%,
+    3% 43%,
+    39% 43%,
+    39% 24%,
+    66% 24%
+  );
+  opacity: 0.62;
+  transform: translateZ(0);
+}
+
 .stage-frame {
   position: relative;
+  z-index: 1;
   width: min(1410px, calc(100vw - 52px));
   height: min(820px, calc(100svh - 52px));
   min-height: 590px;
@@ -230,7 +282,10 @@ body.showcase-view .screen-nav {
   overflow: hidden;
   border: 1px solid rgb(238 230 216 / 0.28);
   border-radius: 36px;
-  background: rgb(16 16 13 / 0.78);
+  background:
+    linear-gradient(135deg, transparent 0 18%, rgb(78 62 45 / 0.075) 18% 19.2%, transparent 19.2% 46%, rgb(230 224 214 / 0.025) 46% 46.6%, transparent 46.6% 100%),
+    radial-gradient(circle at 86% 12%, rgb(216 173 114 / 0.08), transparent 28rem),
+    rgb(16 16 13 / 0.78);
   box-shadow:
     inset 0 1px 0 rgb(255 255 255 / 0.08),
     0 34px 90px rgb(0 0 0 / 0.52);
@@ -282,6 +337,7 @@ body.is-loaded .desktop-hero-panel .media-slot img {
 
 .concept-stage {
   position: relative;
+  z-index: 1;
   display: grid;
   grid-template-columns: minmax(300px, 360px) minmax(0, 1fr);
   gap: 34px;
@@ -296,6 +352,8 @@ body.is-loaded .desktop-hero-panel .media-slot img {
   overflow: hidden;
   border: 2px solid rgb(238 230 216 / 0.3);
   background:
+    linear-gradient(135deg, transparent 0 22%, rgb(216 173 114 / 0.055) 22% 23%, transparent 23% 51%, rgb(230 224 214 / 0.026) 51% 51.6%, transparent 51.6% 100%),
+    radial-gradient(circle at 84% 18%, rgb(216 173 114 / 0.1), transparent 22rem),
     linear-gradient(145deg, rgb(255 255 255 / 0.075), rgb(255 255 255 / 0.018)),
     rgb(17 17 14 / 0.82);
   box-shadow:
@@ -1756,6 +1814,14 @@ h3 {
 @media (max-width: 900px) {
   body {
     overflow: auto;
+  }
+
+  .scene::after {
+    opacity: 0.24;
+    background-size:
+      420px 280px,
+      560px 360px,
+      340px 220px;
   }
 
   .screen-nav {
